@@ -1,11 +1,9 @@
 const fs = require('fs')
 const path = require('path')
-const dirRoot = require('../utils/path');
 const Genre = require('./genreModel');
 
 //lấy data từ file
-const DATA_PATH = path.join(dirRoot, 'data', 'movieList.json');
-
+const DATA_PATH = path.join(__dirname, '..','data','movieList.json');
 module.exports = class MovieModel {
 
 

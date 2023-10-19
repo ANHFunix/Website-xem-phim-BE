@@ -5,7 +5,7 @@ const dirRoot = require('../utils/path')
 
 module.exports = class Genre {
     static getAllGenres = () => {
-        const GENRE_NAME = path.join(dirRoot, 'data', 'genreList.json');
+        const GENRE_NAME = path.join(__dirname, '..','data', 'genreList.json');
         return JSON.parse(fs.readFileSync(GENRE_NAME, 'utf8'));
     }
 

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const dirRoot = require('../utils/path');
 
-const DATA_PATH = path.join(dirRoot, 'data', 'videoList.json');
+const DATA_PATH = path.join(dirRoot, '..', 'data', 'videoList.json');
 
 
 module.exports = class Video {

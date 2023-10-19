@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const dirRoot = require('../utils/path');
 
-const DATA_PATH = path.join(dirRoot, 'data', 'userToken.json');
+// const DATA_PATH = path.join(dirRoot, 'data', 'userToken.json');
+const DATA_PATH = path.join(__dirname,'../data/userToken.json');
 
 module.exports = class UserToken {
     static getAll = () => {

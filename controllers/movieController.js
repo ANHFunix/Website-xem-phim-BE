@@ -18,7 +18,7 @@ const getAllMovieTrending = (req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({ error: 'Lỗi khi lấy danh sách phim phổ biến' });
+        res.status(500).send( error);
     }
 }
 
